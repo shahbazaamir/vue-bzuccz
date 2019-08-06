@@ -10,7 +10,9 @@ var config = {
   authDomain: "vue-demo-537e6.firebaseapp.com",
   databaseURL: "https://vue-demo-537e6.firebaseio.com"
 }
-firebase.initializeApp(config);
+if (!firebase.apps.length) {
+   firebase.initializeApp(config);
+}
 
 new Vue({
   el: '#app',
