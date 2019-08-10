@@ -4,7 +4,8 @@
   "private": true,
   "dependencies": {
     "vue": "2.4.2",
-    "firebase" : "6.3.4"
+    "firebase" : "6.3.4",
+    "firebaseui" : "4.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
