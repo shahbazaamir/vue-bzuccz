@@ -1,5 +1,6 @@
 export const ByMarketCap = {
-  template : `
+  template: `
+  
     <table>
       <th>
         <td>
@@ -9,15 +10,24 @@ export const ByMarketCap = {
           Market Capitalization
         </td>
       </th>
-      <tr>
-        <td>
-          HDFC
+      <tr v-for = "a in stocks">
+        <td  >
+          {{a.name}}
         </td>
         <td>
-          1000Cr
+          {{a.mCap}}
         </td>
       </tr>
     </table>
-  `
+  ` ,
+  data: function () {
+    return {
+      stocks: [
+        { "name": "HDFC", "mCap": "1000Cr" },
+        { "name": "ICICI", "mCap": "100Cr" }
+      ]
+    }
+  }
+
 
 }
