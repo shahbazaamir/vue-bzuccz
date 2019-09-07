@@ -7,6 +7,8 @@ import firebase from 'firebase'
 
 import firebaseui from 'firebaseui'
 
+import { App } from './app';
+
 var config = {
   apiKey: "AIzaSyAi_yuJciPXLFr_PYPeU3eTvtXf8jbJ8zw",
   authDomain: "vue-demo-537e6.firebaseapp.com",
@@ -32,27 +34,6 @@ if (!firebase.apps.length) {
 
 new Vue({
   el: '#app',
-  template: `<div>
-  <h1>hello vvue </h1>
-   <p> {{message}} bye changed </p> 
-   <user></user>
-   </div>`,
-  data: {
-    message: 'hi'
-  },
-  methods: {
-    saveUser: {
-        /*firebase.database().ref('users/' + 'userId').set({
-        username: 'name1',
-        email: 'email1',
-        profile_picture: 'imageUrl'
-      });*/
-    }
-  }
+  render: h => h(App)
+ })
 
-})
-
-
-Vue.component('user', {
-  template: '<div><h1> User component</h1></div>'
-});
