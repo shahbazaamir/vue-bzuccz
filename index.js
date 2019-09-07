@@ -28,9 +28,6 @@ if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
 
-/*
-
-*/
 
 new Vue({
   el: '#app',

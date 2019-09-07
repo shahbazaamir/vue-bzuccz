@@ -1,7 +1,8 @@
 import {user } from './user';
+import {ByMarketCap } from './byMarketCap';
 
 export const App = {
-  components: { user },
+  components: { user,ByMarketCap },
   data:{
     message: 'hi'
   },
@@ -9,6 +10,7 @@ export const App = {
   <h1>hello vvue </h1>
    <p> {{message}} bye changed </p> 
    <user></user>
+   <ByMarketCap></ByMarketCap>
    </div>`,
    methods: {
     saveUser: {
