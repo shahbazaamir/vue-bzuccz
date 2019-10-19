@@ -10,11 +10,11 @@ export const user = {
 
   method : {
      saveUser: {
-        firebaseService.get('users/' + 'userId').set({
+       /* firebaseService.get('users/' + 'userId').set({
         username: 'name1',
         email: 'email1',
         profile_picture: 'imageUrl'
-      });
+      });*/
     }
   }
 };
